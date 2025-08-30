@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -121,3 +122,48 @@ body {
 .data:last-child {
   border-right: none;
 }
+
+        /* Navbar Center */
+        .navbar {
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            justify-content:center;
+            background-color: #f1eded;
+            padding:1px 0;
+            /* center navbar */
+        }
+        /* Nav items column wise (icon on top, text below) */
+        .nav-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 15px;
+            color: #3b3939;
+          transition: all 0.7s ease;
+          padding:1px 0;
+        }
+        /* Icon styling */
+        .nav-link i {
+            font-size: 14px;
+            margin-bottom: 4px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        /* Hover effects */
+        .nav-link:hover {
+            color: #0d6efd;
+            /* Bootstrap blue */
+        }
+        .nav-link:hover i {
+            transform: scale(1);
+            color: #0d6efd;
+        }
+        /* Active link */
+        .nav-link.active {
+            color: #0d6efd;
+        }
+        .nav-link.active i {
+            color: #0d6efd;
+        }
+    
